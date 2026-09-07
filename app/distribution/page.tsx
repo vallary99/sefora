@@ -1,4 +1,5 @@
 import CTASection from "@/components/CTASection";
+import PageHero from "@/components/PageHero";
 import JsonLd from "@/components/JsonLd";
 import { buildMetadata, breadcrumbJsonLd } from "@/lib/seo";
 import { COUNTIES, EXPANSION_MARKETS, SITE } from "@/lib/constants";
@@ -17,18 +18,13 @@ export default function DistributionPage() {
         data={breadcrumbJsonLd([{ name: "Coverage", path: "/distribution" }])}
       />
 
-      <section className="mx-auto max-w-content px-6 py-14 lg:px-10 lg:py-20">
-        <div className="max-w-2xl">
-          <h1 className="font-display text-4xl font-bold text-ink lg:text-5xl">
-            Coverage areas
-          </h1>
-          <p className="mt-5 text-lg leading-relaxed text-stone">
-            We’re building deep coverage in one region before expanding, rather
-            than spreading thin across the whole country from day one.
-          </p>
-        </div>
+      <PageHero
+        title="Coverage areas"
+        description="We're building deep coverage in one region before expanding, rather than spreading thin across the whole country from day one."
+      />
 
-        <div className="mt-12 grid gap-10 lg:grid-cols-[1fr_1fr]">
+      <section className="mx-auto max-w-content px-6 py-14 lg:px-10 lg:py-20">
+        <div className="grid gap-10 lg:grid-cols-[1fr_1fr]">
           <div className="border border-line bg-sand p-8">
             <p className="font-display text-base italic text-forest">
               Primary market

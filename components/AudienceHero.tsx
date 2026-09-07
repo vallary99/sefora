@@ -4,11 +4,11 @@ export default function AudienceHero() {
   return (
     <div>
       <h1 className="font-display text-[2.75rem] font-bold leading-[1.05] text-ink sm:text-6xl lg:text-[4.25rem]">
-        <em className="italic text-forest">Consistent tissue supply</em> for Western Kenya.
+        <em className="italic text-forest">Reliable tissue supply</em> for Western Kenya.
       </h1>
       <p className="mt-7 max-w-xl text-lg leading-relaxed text-[#5a625d]">
-        Toilet tissue, kitchen towel, serviettes and wet wipes, supplied from Kisumu across
-        Western Kenya.
+        Toilet tissue, kitchen towel, serviettes and wet wipes, supplied from Kisumu to
+        businesses and distributors across Western Kenya.
       </p>
       <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
         <Link

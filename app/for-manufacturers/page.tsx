@@ -1,6 +1,7 @@
 import CTASection from "@/components/CTASection";
 import Accordion from "@/components/Accordion";
 import UseCaseGrid from "@/components/UseCaseGrid";
+import PageHero from "@/components/PageHero";
 import JsonLd from "@/components/JsonLd";
 import { buildMetadata, breadcrumbJsonLd } from "@/lib/seo";
 
@@ -38,18 +39,10 @@ export default function ForManufacturersPage() {
         ])}
       />
 
-      <section className="mx-auto max-w-content px-6 py-14 lg:px-10 lg:py-20">
-        <div className="max-w-2xl">
-          <h1 className="font-display text-4xl font-bold text-ink lg:text-5xl">
-            One supplier for a recurring requirement
-          </h1>
-          <p className="mt-5 text-lg leading-relaxed text-stone">
-            If your organisation buys tissue products repeatedly, for washrooms,
-            staff welfare, production areas or hospitality, Sefora can supply it
-            as a standing arrangement rather than a series of one-off purchases.
-          </p>
-        </div>
-      </section>
+      <PageHero
+        title="One supplier for a recurring requirement"
+        description="If your organisation buys tissue products repeatedly, for washrooms, staff welfare, production areas or hospitality, Sefora can supply it as a standing arrangement."
+      />
 
       <section className="mx-auto max-w-content px-6 py-10 lg:px-10 lg:py-14">
         <div className="border border-line bg-sand p-8 lg:p-14">

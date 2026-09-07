@@ -1,4 +1,5 @@
 import CTASection from "@/components/CTASection";
+import PageHero from "@/components/PageHero";
 import RevealOnScroll from "@/components/RevealOnScroll";
 import JsonLd from "@/components/JsonLd";
 import { buildMetadata, breadcrumbJsonLd } from "@/lib/seo";
@@ -31,14 +32,14 @@ export default function AboutPage() {
     <>
       <JsonLd data={breadcrumbJsonLd([{ name: "About", path: "/about" }])} />
 
+      <PageHero
+        title="A new tissue supplier, built deliberately."
+        description="Sefora is a new tissue and paper hygiene brand entering the Kenyan market, focused on direct B2B relationships with distributors and manufacturers."
+      />
+
       <section className="mx-auto max-w-content px-6 py-14 lg:px-10 lg:py-20">
         <RevealOnScroll className="max-w-2xl">
-          <p className="font-display text-base italic text-leaf/90">About Sefora</p>
-          <h1 className="mt-2 font-display text-4xl font-bold text-ink lg:text-5xl">
-            A new tissue supplier, built deliberately.
-          </h1>
-          <p className="mt-6 text-lg leading-relaxed text-stone">
-            Sefora is a new tissue and paper hygiene brand entering the Kenyan market.
+          <p className="text-lg leading-relaxed text-stone">
             We&rsquo;re building the business the way most serious B2B suppliers do: not through
             broad consumer advertising, but through direct relationships with the distributors
             and manufacturers who make a market work.
@@ -46,7 +47,7 @@ export default function AboutPage() {
         </RevealOnScroll>
 
         {/* Quick facts */}
-        <div className="mt-14 grid grid-cols-2 gap-8 border-y border-line py-8 sm:grid-cols-4">
+        <div className="mt-10 grid grid-cols-2 gap-8 border border-line bg-sand p-8 sm:grid-cols-4 lg:p-10">
           <div>
             <p className="text-xs font-semibold uppercase tracking-wide text-stone">Coverage</p>
             <p className="mt-1.5 font-display text-lg font-bold text-ink">{SITE.region}</p>
@@ -64,20 +65,32 @@ export default function AboutPage() {
             <p className="mt-1.5 font-display text-lg font-bold text-ink">{SITE.hub}</p>
           </div>
         </div>
-
-        {/* Numbered sections */}
-        <div className="mt-4 grid gap-10 sm:grid-cols-3 sm:gap-8">
-          {SECTIONS.map((s, i) => (
-            <div key={s.title} className="border-t border-ink/15 pt-5">
-              <span className="font-display text-2xl italic text-gold-dark">
-                {String(i + 1).padStart(2, "0")}
-              </span>
-              <h2 className="mt-2 font-display text-xl font-bold text-ink">{s.title}</h2>
-              <p className="mt-2.5 text-[15px] leading-relaxed text-stone">{s.body}</p>
-            </div>
-          ))}
-        </div>
       </section>
+
+      {/* Alternating title / description cards */}
+      {SECTIONS.map((s, i) => {
+        const tinted = i % 2 === 1;
+        const reverse = i % 2 === 1;
+        return (
+          <section key={s.title} className={tinted ? "bg-sand" : "bg-white"}>
+            <div className="mx-auto max-w-content px-6 py-12 lg:px-10 lg:py-16">
+              <div className="grid gap-6 lg:grid-cols-[1fr_2fr] lg:gap-16">
+                <div className={reverse ? "lg:order-2" : ""}>
+                  <span className="font-display text-3xl italic text-gold-dark">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <h2 className="mt-2 font-display text-2xl font-bold text-ink lg:text-3xl">
+                    {s.title}
+                  </h2>
+                </div>
+                <div className={reverse ? "lg:order-1" : ""}>
+                  <p className="max-w-2xl text-base leading-relaxed text-stone">{s.body}</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        );
+      })}
 
       <CTASection
         tone="light"

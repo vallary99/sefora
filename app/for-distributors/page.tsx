@@ -1,5 +1,6 @@
 import CTASection from "@/components/CTASection";
 import Accordion from "@/components/Accordion";
+import PageHero from "@/components/PageHero";
 import JsonLd from "@/components/JsonLd";
 import { buildMetadata, breadcrumbJsonLd } from "@/lib/seo";
 import { COUNTIES } from "@/lib/constants";
@@ -54,19 +55,10 @@ export default function ForDistributorsPage() {
         ])}
       />
 
-      <section className="mx-auto max-w-content px-6 py-14 lg:px-10 lg:py-20">
-        <div className="max-w-2xl">
-          <h1 className="font-display text-4xl font-bold text-ink lg:text-5xl">
-            Distribution opportunities with Sefora
-          </h1>
-          <p className="mt-5 text-lg leading-relaxed text-stone">
-            We’re looking for distributors who can give Sefora real market
-            access: geographic coverage, an existing customer base and the sales
-            capacity to carry a new tissue brand alongside what you already
-            sell.
-          </p>
-        </div>
-      </section>
+      <PageHero
+        title="Distribution opportunities with Sefora"
+        description="We're looking for distributors who can give Sefora real market access: geographic coverage, an existing customer base and the sales capacity to carry a new tissue brand."
+      />
 
       <section className="mx-auto max-w-content px-6 py-10 lg:px-10 lg:py-14">
         <div className="border border-line bg-sand p-8 lg:p-14">
