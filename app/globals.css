@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  --color-ink: #0d1a12;
+  --color-forest: #1a4d2e;
+  --color-forest-dark: #0a2116;
+  --color-gold: #e8b923;
+  --color-gold-dark: #b8900f;
+  --color-leaf: #8bc34a;
+  --color-white: #ffffff;
+  --color-sand: #f8f5f0;
+  --color-stone: #6b7570;
+  --color-line: #e3ddd1;
+}
+
+@theme inline {
+  --color-ink: var(--color-ink);
+  --color-forest: var(--color-forest);
+  --color-forest-dark: var(--color-forest-dark);
+  --color-gold: var(--color-gold);
+  --color-gold-dark: var(--color-gold-dark);
+  --color-leaf: var(--color-leaf);
+  --color-sand: var(--color-sand);
+  --color-stone: var(--color-stone);
+  --color-line: var(--color-line);
+
+  --font-display: "Poppins", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  --container-content: 1200px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-white);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display);
+}
+
+::selection {
+  background: var(--color-gold);
+  color: var(--color-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
