@@ -9,7 +9,7 @@ export default function ProcessStepper({ stages }: { stages: Stage[] }) {
 
   return (
     <div className="bg-forest-dark p-8 text-white lg:p-14">
-      <div className="flex flex-wrap gap-2 sm:flex-nowrap">
+      <div className="hidden gap-2 sm:flex-nowrap lg:flex">
         {stages.map((stage, i) => (
           <button
             key={stage.title}

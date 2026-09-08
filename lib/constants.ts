@@ -13,6 +13,7 @@ export const SITE = {
 };
 
 export const PRIMARY_NAV = [
+  { label: "Home", href: "/" },
   { label: "Products", href: "/products" },
   { label: "For Distributors", href: "/for-distributors" },
   { label: "For Businesses", href: "/for-manufacturers" },
