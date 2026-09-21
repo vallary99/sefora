@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { FOOTER_NAV, SITE } from "@/lib/constants";
+import { FOOTER_NAV, SITE, SOCIAL_LINKS } from "@/lib/constants";
+import { InstagramIcon, FacebookIcon, TikTokIcon } from "./icons/SocialIcons";
 import Logo from "./Logo";
 
 export default function Footer() {
@@ -31,6 +32,35 @@ export default function Footer() {
                 className="block font-medium text-ink hover:text-forest"
               >
                 {SITE.phone}
+              </a>
+            </div>
+            <div className="mt-5 flex items-center gap-3">
+              <a
+                href={SOCIAL_LINKS.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Sefora on Instagram"
+                className="flex h-10 w-10 items-center justify-center rounded-lg bg-forest text-white transition-colors hover:bg-forest-dark"
+              >
+                <InstagramIcon />
+              </a>
+              <a
+                href={SOCIAL_LINKS.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Sefora on Facebook"
+                className="flex h-10 w-10 items-center justify-center rounded-lg bg-forest text-white transition-colors hover:bg-forest-dark"
+              >
+                <FacebookIcon />
+              </a>
+              <a
+                href={SOCIAL_LINKS.tiktok}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Sefora on TikTok"
+                className="flex h-10 w-10 items-center justify-center rounded-lg bg-forest text-white transition-colors hover:bg-forest-dark"
+              >
+                <TikTokIcon />
               </a>
             </div>
           </div>

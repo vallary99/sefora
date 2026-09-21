@@ -14,6 +14,12 @@ export const SITE = {
   region: "Kisumu & Western Kenya",
 };
 
+export const SOCIAL_LINKS = {
+  instagram: "https://www.instagram.com/seforake",
+  facebook: "https://www.facebook.com/share/14sbtd71GZd/",
+  tiktok: "https://www.tiktok.com/@seforake",
+};
+
 export const PRIMARY_NAV = [
   { label: "Home", href: "/" },
   { label: "Products", href: "/products" },
