@@ -85,7 +85,14 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col gap-4 border-t border-line pt-6 text-xs text-stone sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-12 border-t border-line pt-6 text-xs leading-relaxed text-stone">
+          <p>
+            Manufactured in Kenya by: <span className="font-medium text-ink">{SITE.manufacturerName}</span>
+          </p>
+          <p className="mt-1">{SITE.registeredAddress}</p>
+        </div>
+
+        <div className="mt-4 flex flex-col gap-4 border-t border-line pt-6 text-xs text-stone sm:flex-row sm:items-center sm:justify-between">
           <p>
             &copy; {new Date().getFullYear()} {SITE.legalName}. All rights
             reserved.

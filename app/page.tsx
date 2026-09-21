@@ -23,14 +23,14 @@ export default function HomePage() {
       {/* Hero */}
       <section className="relative overflow-hidden bg-[#e7eae7]">
         <div className="mx-auto grid max-w-content items-center gap-10 px-6 py-16 lg:grid-cols-[1.6fr_1fr] lg:gap-6 lg:px-10 lg:py-20">
-          <div className="group relative flex items-center justify-center overflow-hidden">
+          <div className="order-2 group relative flex items-center justify-center overflow-hidden lg:order-1">
             <Image
               src="/products/toilet-tissue.jpg"
               alt="Rolled toilet tissue, illustrative"
               width={700}
               height={700}
               priority
-              className="w-full transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+              className="w-full max-h-[45vh] object-contain transition-transform duration-700 ease-out group-hover:scale-[1.03] lg:max-h-none"
               style={{
                 maskImage:
                   "radial-gradient(ellipse 65% 65% at center, black 55%, transparent 100%)",
@@ -39,7 +39,7 @@ export default function HomePage() {
               }}
             />
           </div>
-          <div className="min-w-0 lg:pl-6">
+          <div className="order-1 min-w-0 lg:order-2 lg:pl-6">
             <AudienceHero />
           </div>
         </div>
