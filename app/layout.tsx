@@ -18,7 +18,7 @@ import { organizationJsonLd } from "@/lib/seo";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.domain),
   title: {
-    default: `${SITE.name}: Commercial Tissue Supply for Western Kenya`,
+    default: `${SITE.name}: Quality Tissue & Hygiene Products, Made in Kenya`,
     template: `%s | ${SITE.name}`,
   },
   description: SITE.description,

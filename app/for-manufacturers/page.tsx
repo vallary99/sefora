@@ -6,15 +6,15 @@ import JsonLd from "@/components/JsonLd";
 import { buildMetadata, breadcrumbJsonLd } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "For Manufacturers & Businesses",
+  title: "For Businesses & Institutions",
   description:
-    "Recurring commercial tissue supply for manufacturers and businesses in Western Kenya: washrooms, staff welfare, production environments and hospitality.",
+    "Reliable tissue and hygiene products for businesses and institutions across Kenya: washrooms, staff welfare, production environments and hospitality.",
   path: "/for-manufacturers",
 });
 
 const QUESTIONS = [
   {
-    title: "Why a standing supplier instead of repeat one-off orders?",
+    title: "Why a standing arrangement instead of repeat one-off orders?",
     body: "A standing arrangement means consistent stock, a known point of contact, and pricing that reflects an ongoing relationship rather than a single transaction.",
   },
   {
@@ -33,15 +33,15 @@ export default function ForManufacturersPage() {
       <JsonLd
         data={breadcrumbJsonLd([
           {
-            name: "For Manufacturers & Businesses",
+            name: "For Businesses & Institutions",
             path: "/for-manufacturers",
           },
         ])}
       />
 
       <PageHero
-        title="One supplier for a recurring requirement"
-        description="If your organisation buys tissue products repeatedly, for washrooms, staff welfare, production areas or hospitality, Sefora can supply it as a standing arrangement."
+        title="A reliable source for a recurring requirement"
+        description="If your organisation needs tissue products repeatedly, for washrooms, staff welfare, production areas or hospitality, Sefora can meet it as a standing arrangement."
       />
 
       <section className="mx-auto max-w-content px-6 py-10 lg:px-10 lg:py-14">
@@ -65,7 +65,7 @@ export default function ForManufacturersPage() {
       </section>
 
       <CTASection
-        heading="Set up a standing supply arrangement"
+        heading="Set up a standing arrangement"
         body="Tell us your current tissue requirement and where you're based, and we'll follow up with a quotation."
         primary={{ label: "Request a Quote", href: "/contact?intent=quote" }}
         secondary={{ label: "Make a Business Enquiry", href: "/contact" }}

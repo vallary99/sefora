@@ -8,14 +8,14 @@ import { SITE } from "@/lib/constants";
 export const metadata = buildMetadata({
   title: "About Sefora",
   description:
-    "Sefora Limited is a new tissue brand entering the Kenyan market, focused on building direct B2B relationships with distributors and manufacturers in Western Kenya.",
+    "Sefora Limited is a Kenyan tissue and hygiene products manufacturer, focused on building direct B2B relationships with distributors and businesses across the country.",
   path: "/about",
 });
 
 const SECTIONS = [
   {
     title: "Where we're starting",
-    body: "Our initial focus is Kisumu and Western Kenya. We've chosen to go deep in one region first, proving the product, the service and the relationships, rather than spreading thin across the whole country from day one. Kisumu serves as our commercial hub for the wider region, with additional Kenyan markets pursued as commercial traction is proven.",
+    body: "Kisumu is our commercial hub \u2014 the base from which we're building distributor and business relationships across Kenya. It gives us a strong operational foundation as we grow our presence nationally.",
   },
   {
     title: "How we work",
@@ -33,24 +33,24 @@ export default function AboutPage() {
       <JsonLd data={breadcrumbJsonLd([{ name: "About", path: "/about" }])} />
 
       <PageHero
-        title="A new tissue supplier, built deliberately."
-        description="Sefora is a new tissue and paper hygiene brand entering the Kenyan market, focused on direct B2B relationships with distributors and manufacturers."
+        title="A Kenyan tissue manufacturer, built deliberately."
+        description="Sefora is a Kenyan tissue and hygiene products manufacturer, focused on direct B2B relationships with distributors and businesses."
       />
 
       <section className="mx-auto max-w-content px-6 py-14 lg:px-10 lg:py-20">
         <RevealOnScroll className="max-w-2xl">
           <p className="text-lg leading-relaxed text-stone">
-            We&rsquo;re building the business the way most serious B2B suppliers do: not through
-            broad consumer advertising, but through direct relationships with the distributors
-            and manufacturers who make a market work.
+            We&rsquo;re building the business the way most serious B2B manufacturers do: not
+            through broad consumer advertising, but through direct relationships with the
+            distributors and businesses who make a market work.
           </p>
         </RevealOnScroll>
 
         {/* Quick facts */}
         <div className="mt-10 grid grid-cols-2 gap-8 border border-line bg-sand p-8 sm:grid-cols-4 lg:p-10">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-wide text-stone">Coverage</p>
-            <p className="mt-1.5 font-display text-lg font-bold text-ink">{SITE.region}</p>
+            <p className="text-xs font-semibold uppercase tracking-wide text-stone">Base</p>
+            <p className="mt-1.5 font-display text-lg font-bold text-ink">{SITE.hub}</p>
           </div>
           <div>
             <p className="text-xs font-semibold uppercase tracking-wide text-stone">Categories</p>
@@ -61,8 +61,8 @@ export default function AboutPage() {
             <p className="mt-1.5 font-display text-lg font-bold text-ink">Distributors &amp; businesses</p>
           </div>
           <div>
-            <p className="text-xs font-semibold uppercase tracking-wide text-stone">Hub</p>
-            <p className="mt-1.5 font-display text-lg font-bold text-ink">{SITE.hub}</p>
+            <p className="text-xs font-semibold uppercase tracking-wide text-stone">Reach</p>
+            <p className="mt-1.5 font-display text-lg font-bold text-ink">Growing across Kenya</p>
           </div>
         </div>
       </section>

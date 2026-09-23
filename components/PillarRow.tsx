@@ -7,12 +7,12 @@ const PILLARS = [
   {
     n: "02",
     title: "Consistent",
-    body: "A standing supply arrangement, not repeat one-off orders.",
+    body: "A standing commercial relationship, not repeat one-off orders.",
   },
   {
     n: "03",
     title: "Kisumu-based",
-    body: "Built outward from Western Kenya, not a national operation spread thin.",
+    body: "Our operational base, and the launchpad for growth across Kenya.",
   },
   {
     n: "04",

@@ -8,7 +8,7 @@ import { COUNTIES } from "@/lib/constants";
 export const metadata = buildMetadata({
   title: "For Distributors",
   description:
-    "Sefora is looking for FMCG, tissue & paper, and hygiene product distributors in Kisumu and Western Kenya to carry a new tissue brand into the market.",
+    "Sefora is looking for FMCG, tissue & paper, and hygiene product distributors across Kenya to carry a new tissue brand into the market.",
   path: "/for-distributors",
 });
 
@@ -90,9 +90,9 @@ export default function ForDistributorsPage() {
               Priority areas
             </h2>
             <p className="mt-4 text-[15px] leading-relaxed text-stone">
-              We’re prioritising distributors already active in Kisumu and the
-              surrounding Western Kenya counties, with national distributors
-              considered for wider market access as we grow.
+              We’re prioritising distributors already active in Kisumu and
+              Western Kenya, while actively building relationships with
+              national distributors as we grow our footprint across Kenya.
             </p>
             <div className="mt-5 flex flex-wrap items-center gap-x-2 gap-y-2 text-sm text-ink">
               {COUNTIES.map((c, i) => (

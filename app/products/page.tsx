@@ -19,7 +19,7 @@ export default function ProductsPage() {
 
       <PageHero
         title="Products"
-        description="Core tissue categories for commercial and institutional use, supplied in commercial quantities across Kisumu and Western Kenya."
+        description="Core tissue categories for commercial and institutional use, manufactured and supplied in commercial quantities across Kenya."
       />
 
       {PRODUCTS.map((p, i) => (

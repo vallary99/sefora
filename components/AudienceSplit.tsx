@@ -28,14 +28,15 @@ export default function AudienceSplit() {
       >
         <span className="font-display text-2xl italic text-forest/50">02</span>
         <h3 className="mt-3 font-display text-3xl font-bold text-ink transition-colors duration-300 group-hover:text-forest lg:text-4xl">
-          Manufacturers &amp; businesses
+          Businesses &amp; Institutions
         </h3>
         <p className="mt-4 max-w-sm text-[15px] leading-relaxed text-stone">
-          Standing tissue requirements for washrooms, welfare and production, on
-          one reliable supply arrangement rather than repeat one-off buying.
+          Standing tissue requirements for washrooms, welfare and production, met
+          through one reliable commercial relationship rather than repeat one-off
+          buying.
         </p>
         <span className="mt-6 inline-block w-fit border-b border-ink/25 pb-1 text-sm font-medium text-ink transition-colors group-hover:border-forest group-hover:text-forest">
-          Recurring B2B supply
+          Recurring B2B orders
         </span>
       </Link>
     </div>

@@ -17,8 +17,8 @@ export default function Footer() {
               <Logo className="h-16" />
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-stone">
-              Commercial tissue supply for manufacturers and distributors, based
-              in Kisumu and serving Western Kenya.
+              Kenyan manufacturer of quality tissue and hygiene products, based
+              in Kisumu.
             </p>
             <div className="mt-5 space-y-1 text-sm">
               <a

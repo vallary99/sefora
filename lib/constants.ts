@@ -3,15 +3,14 @@ export const SITE = {
   legalName: "Sefora Limited",
   manufacturerName: "Sefora Co. Kenya Ltd",
   domain: "https://www.sefora.co.ke",
-  tagline: "Commercial tissue supply for Western Kenya and beyond",
+  tagline: "Kenya's growing hub for quality tissue and hygiene products",
   description:
-    "Sefora Limited supplies tissue and paper hygiene products to distributors and manufacturers across Kisumu and Western Kenya, with a growing footprint across the country.",
+    "Sefora Limited is a Kenyan tissue and hygiene products manufacturer, built to serve distributors and businesses nationwide, with commercial operations based in Kisumu.",
   phone: "+254 740 045 065",
   email: "info@sefora.co.ke",
   whatsapp: "254740045065",
   registeredAddress: "P.O. Box 2957, Nairobi \u2013 00100",
   hub: "Kisumu, Kenya",
-  region: "Kisumu & Western Kenya",
 };
 
 export const SOCIAL_LINKS = {
@@ -41,7 +40,7 @@ export const FOOTER_NAV = [
     heading: "Work with us",
     links: [
       { label: "For distributors", href: "/for-distributors" },
-      { label: "For manufacturers & businesses", href: "/for-manufacturers" },
+      { label: "For businesses & institutions", href: "/for-manufacturers" },
       { label: "Request a quote", href: "/contact?intent=quote" },
       { label: "Request a sample", href: "/contact?intent=sample" },
     ],

@@ -35,7 +35,7 @@ const USE_CASES: UseCase[] = [
   {
     icon: Building2,
     title: "Offices & reception areas",
-    body: "Wet wipes and washroom tissue where visitors and staff meet, often the first thing noticed about a facilities supplier.",
+    body: "Wet wipes and washroom tissue where visitors and staff meet, often the first thing noticed about how well a facility is run.",
   },
   {
     icon: Hotel,

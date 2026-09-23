@@ -11,9 +11,9 @@ import RevealOnScroll from "@/components/RevealOnScroll";
 import CTASection from "@/components/CTASection";
 
 export const metadata = buildMetadata({
-  title: `${SITE.name}: Commercial Tissue Supply for Manufacturers & Distributors`,
+  title: `${SITE.name}: Quality Tissue & Hygiene Products, Made in Kenya`,
   description:
-    "Sefora Limited supplies tissue and paper hygiene products to distributors and manufacturers in Kisumu and Western Kenya. Request a quote, sample, or distribution partnership.",
+    "Sefora Limited manufactures tissue and hygiene products for distributors and businesses across Kenya, based in Kisumu. Request a quote, sample, or distribution partnership.",
   path: "/",
 });
 
