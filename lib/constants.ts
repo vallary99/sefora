@@ -49,9 +49,7 @@ export const FOOTER_NAV = [
     heading: "Products",
     links: [
       { label: "Toilet tissue", href: "/products#toilet-tissue" },
-      { label: "Kitchen towel", href: "/products#kitchen-towel" },
-      { label: "Serviette", href: "/products#serviette" },
-      { label: "Wet wipes", href: "/products#wet-wipes" },
+      { label: "Coming soon", href: "/products#coming-soon" },
       { label: "All products", href: "/products" },
     ],
   },

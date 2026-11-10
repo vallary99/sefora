@@ -5,7 +5,7 @@ import Logo from "./Logo";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-line/70 bg-sand">
+    <footer className="relative border-t border-gold/60 bg-sand">
       <div className="mx-auto max-w-content px-6 py-12 lg:px-10 lg:py-16">
         <div className="grid gap-10 lg:grid-cols-[1.3fr_1fr_1fr_1fr]">
           <div>
@@ -67,7 +67,7 @@ export default function Footer() {
 
           {FOOTER_NAV.map((col) => (
             <div key={col.heading} className="hidden sm:block">
-              <h3 className="text-sm font-semibold text-ink">{col.heading}</h3>
+              <h3 className="font-display text-lg text-forest-dark">{col.heading}</h3>
               <ul className="mt-4 space-y-2.5">
                 {col.links.map((link) => (
                   <li key={link.href}>
@@ -85,7 +85,7 @@ export default function Footer() {
 
           {/* Compact mobile nav: essentials only */}
           <div className="sm:hidden">
-            <h3 className="text-sm font-semibold text-ink">Work with us</h3>
+            <h3 className="font-display text-lg text-forest-dark">Work with us</h3>
             <ul className="mt-4 space-y-2.5">
               <li>
                 <Link
@@ -100,7 +100,7 @@ export default function Footer() {
                   href="/for-manufacturers"
                   className="text-sm text-stone hover:text-forest"
                 >
-                  For manufacturers
+                  For businesses
                 </Link>
               </li>
               <li>

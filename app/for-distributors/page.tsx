@@ -61,7 +61,7 @@ export default function ForDistributorsPage() {
       />
 
       <section className="mx-auto max-w-content px-6 py-10 lg:px-10 lg:py-14">
-        <div className="border border-line bg-sand p-8 lg:p-14">
+        <div className="rounded-[2rem] border border-line bg-sand p-8 lg:p-14">
           <h2 className="font-display text-2xl font-bold text-ink lg:text-3xl">
             What we look for in a distributor
           </h2>

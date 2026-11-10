@@ -47,7 +47,7 @@ export default function AboutPage() {
         </RevealOnScroll>
 
         {/* Quick facts */}
-        <div className="mt-10 grid grid-cols-2 gap-8 border border-line bg-sand p-8 sm:grid-cols-4 lg:p-10">
+        <div className="mt-10 grid grid-cols-2 gap-8 rounded-[2rem] border border-line bg-sand p-8 sm:grid-cols-4 lg:p-10">
           <div>
             <p className="text-xs font-semibold uppercase tracking-wide text-stone">Base</p>
             <p className="mt-1.5 font-display text-lg font-bold text-ink">{SITE.hub}</p>

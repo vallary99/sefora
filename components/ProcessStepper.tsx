@@ -8,7 +8,7 @@ export default function ProcessStepper({ stages }: { stages: Stage[] }) {
   const [active, setActive] = useState(0);
 
   return (
-    <div className="bg-forest-dark p-8 text-white lg:p-14">
+    <div className="rounded-[2rem] bg-forest-dark p-8 text-white lg:p-14">
       <div className="hidden gap-2 sm:flex-nowrap lg:flex">
         {stages.map((stage, i) => (
           <button

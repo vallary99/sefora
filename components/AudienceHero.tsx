@@ -1,28 +1,31 @@
 import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+import Eyebrow from "./Eyebrow";
 
 export default function AudienceHero() {
   return (
     <div>
-      <h1 className="font-display text-[2.75rem] font-bold leading-[1.05] text-ink sm:text-6xl lg:text-[4.25rem]">
-        <em className="italic text-forest">Quality tissue and hygiene products</em>, made in
-        Kenya.
+      <Eyebrow>Premium tissue solutions</Eyebrow>
+      <h1 className="mt-6 text-[3.1rem] leading-[1.02] text-forest-dark sm:text-6xl lg:text-[4rem] xl:text-[4.5rem]">
+        <span className="block">Quality You</span>
+        <span className="block">Can Feel</span>
       </h1>
-      <p className="mt-7 max-w-xl text-lg leading-relaxed text-[#5a625d]">
-        Toilet tissue, kitchen towel, serviettes and wet wipes, manufactured and delivered to
-        distributors and businesses from our base in Kisumu.
+      <p className="mt-6 max-w-md text-base leading-relaxed text-ink/75 lg:text-lg">
+        Soft, reliable tissue and hygiene products, manufactured in Kenya for distributors and
+        businesses, and delivered from our base in Kisumu.
       </p>
-      <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
+      <div className="mt-9 flex flex-wrap items-center gap-3">
         <Link
           href="/contact?intent=quote"
-          className="inline-flex items-center justify-center bg-gold px-8 py-4 text-[15px] font-semibold text-ink transition-transform duration-200 hover:scale-[1.03] hover:bg-gold-dark"
+          className="inline-flex items-center justify-center rounded-full bg-gold px-8 py-4 text-[15px] font-semibold text-ink transition-all duration-200 hover:-translate-y-0.5 hover:bg-gold-dark"
         >
           Request a Quote
         </Link>
         <Link
           href="/products"
-          className="border-b border-ink/25 pb-1 text-[15px] font-medium text-ink transition-colors hover:border-forest hover:text-forest"
+          className="inline-flex items-center gap-2 rounded-full bg-forest-dark px-8 py-4 text-[15px] font-semibold text-white transition-colors hover:bg-forest"
         >
-          Explore Products
+          Explore Our Products <ArrowRight size={16} aria-hidden="true" />
         </Link>
       </div>
     </div>

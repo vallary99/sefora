@@ -25,7 +25,7 @@ export default function DistributionPage() {
 
       <section className="mx-auto max-w-content px-6 py-14 lg:px-10 lg:py-20">
         <div className="grid gap-10 lg:grid-cols-[1fr_1fr]">
-          <div className="border border-line bg-sand p-8">
+          <div className="rounded-[2rem] border border-line bg-sand p-8">
             <p className="font-display text-base italic text-forest">
               Primary market
             </p>
@@ -52,7 +52,7 @@ export default function DistributionPage() {
             </ul>
           </div>
 
-          <div className="border border-line p-8">
+          <div className="rounded-[2rem] border border-line p-8">
             <p className="font-display text-base italic text-leaf/90">
               Active growth markets
             </p>

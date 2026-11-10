@@ -40,7 +40,7 @@ export default function Header() {
     <>
       <header
         ref={headerRef}
-        className="sticky top-0 z-50 border-b border-line/70 bg-white/95 backdrop-blur"
+        className="sticky top-0 z-50 border-b border-line/60 bg-ivory/95 backdrop-blur"
       >
         <div className="mx-auto flex max-w-content items-center justify-between gap-4 px-6 py-3 lg:px-10">
           <Link href="/" className="flex shrink-0 items-center" aria-label="Sefora home">
@@ -70,7 +70,7 @@ export default function Header() {
           <div className="hidden shrink-0 xl:block">
             <Link
               href="/contact?intent=quote"
-              className="inline-flex items-center justify-center bg-gold px-5 py-2.5 text-[15px] font-semibold text-ink transition-colors hover:bg-gold-dark"
+              className="inline-flex items-center justify-center rounded-full bg-forest-dark px-6 py-2.5 text-[15px] font-semibold text-white transition-colors hover:bg-forest"
             >
               Request a Quote
             </Link>
@@ -78,7 +78,7 @@ export default function Header() {
 
           <button
             type="button"
-            className="flex h-10 w-10 items-center justify-center border border-line xl:hidden"
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-line xl:hidden"
             aria-label={open ? "Close menu" : "Open menu"}
             aria-expanded={open}
             aria-controls="mobile-menu"
@@ -108,7 +108,7 @@ export default function Header() {
       {open && (
         <div
           id="mobile-menu"
-          className="fixed inset-x-0 bottom-0 z-[100] overflow-y-auto bg-white xl:hidden"
+          className="fixed inset-x-0 bottom-0 z-[100] overflow-y-auto bg-ivory xl:hidden"
           style={{ top: headerHeight }}
         >
           <nav aria-label="Mobile" className="flex flex-col px-6 py-4">
@@ -129,13 +129,13 @@ export default function Header() {
             })}
             <Link
               href="/contact?intent=quote"
-              className="mt-6 inline-flex items-center justify-center bg-gold px-5 py-3.5 text-base font-semibold text-ink"
+              className="mt-6 inline-flex items-center justify-center rounded-full bg-gold px-5 py-3.5 text-base font-semibold text-ink"
             >
               Request a Quote
             </Link>
             <a
-              href="tel:+254700000000"
-              className="mt-3 inline-flex items-center justify-center border border-line px-5 py-3.5 text-base font-semibold text-ink"
+              href="tel:+254740045065"
+              className="mt-3 inline-flex items-center justify-center rounded-full border border-line px-5 py-3.5 text-base font-semibold text-ink"
             >
               Call sales
             </a>

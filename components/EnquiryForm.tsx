@@ -47,7 +47,7 @@ export default function EnquiryForm({ defaultIntent = "general" }: { defaultInte
           <p className="mt-2 text-sm leading-relaxed text-stone">
             Thank you. A member of the Sefora commercial team will get back to you, usually
             within one business day. If your request is urgent, call{" "}
-            <a href="tel:+254700000000" className="font-semibold text-forest underline">
+            <a href="tel:+254740045065" className="font-semibold text-forest underline">
               +254 700 000 000
             </a>
             .
@@ -128,7 +128,7 @@ export default function EnquiryForm({ defaultIntent = "general" }: { defaultInte
       <button
         type="submit"
         disabled={status === "submitting"}
-        className="inline-flex w-full items-center justify-center bg-forest px-6 py-3.5 text-[15px] font-semibold text-white transition-all duration-150 hover:-translate-y-0.5 hover:bg-forest-dark hover:shadow-lg hover:shadow-forest/30 disabled:translate-y-0 disabled:opacity-60 sm:w-auto"
+        className="inline-flex w-full items-center justify-center rounded-full bg-forest px-8 py-3.5 text-[15px] font-semibold text-white transition-all duration-150 hover:-translate-y-0.5 hover:bg-forest-dark hover:shadow-lg hover:shadow-forest/30 disabled:translate-y-0 disabled:opacity-60 sm:w-auto"
       >
         {status === "submitting" ? "Sending…" : "Send enquiry"}
       </button>

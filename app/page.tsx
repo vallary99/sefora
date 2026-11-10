@@ -1,14 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import { buildMetadata } from "@/lib/seo";
 import { SITE, BD_STAGES } from "@/lib/constants";
-import { PRODUCTS } from "@/lib/products";
 import AudienceHero from "@/components/AudienceHero";
-import PillarRow from "@/components/PillarRow";
 import AudienceSplit from "@/components/AudienceSplit";
 import ProcessStepper from "@/components/ProcessStepper";
 import RevealOnScroll from "@/components/RevealOnScroll";
 import CTASection from "@/components/CTASection";
+import Eyebrow from "@/components/Eyebrow";
+import GoldWave from "@/components/GoldWave";
+import FeatureStrip from "@/components/FeatureStrip";
+import RangeTiles from "@/components/RangeTiles";
+import WhySefora from "@/components/WhySefora";
 
 export const metadata = buildMetadata({
   title: `${SITE.name}: Quality Tissue & Hygiene Products, Made in Kenya`,
@@ -21,92 +25,97 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-[#e7eae7]">
-        <div className="mx-auto grid max-w-content items-center gap-10 px-6 py-16 lg:grid-cols-[1.6fr_1fr] lg:gap-6 lg:px-10 lg:py-20">
-          <div className="order-2 group relative flex items-center justify-center overflow-hidden lg:order-1">
-            <Image
-              src="/products/toilet-tissue.jpg"
-              alt="Rolled toilet tissue, illustrative"
-              width={700}
-              height={700}
-              priority
-              className="w-full max-h-[45vh] object-contain transition-transform duration-700 ease-out group-hover:scale-[1.03] lg:max-h-none"
-              style={{
-                maskImage:
-                  "radial-gradient(ellipse 65% 65% at center, black 55%, transparent 100%)",
-                WebkitMaskImage:
-                  "radial-gradient(ellipse 65% 65% at center, black 55%, transparent 100%)",
-              }}
-            />
-          </div>
-          <div className="order-1 min-w-0 lg:order-2 lg:pl-6">
+      <section
+        className="relative overflow-hidden"
+        style={{
+          background:
+            "radial-gradient(60% 80% at 88% 0%, rgba(139,195,74,0.18), transparent 62%), radial-gradient(50% 60% at 0% 100%, rgba(232,185,35,0.12), transparent 60%), #fbf8f1",
+        }}
+      >
+        <GoldWave className="absolute inset-x-0 bottom-0 z-[5] h-20 w-full lg:h-32" />
+        <div className="relative z-10 grid items-center lg:grid-cols-[1fr_1.3fr]">
+          <div className="relative z-20 min-w-0 px-6 pb-2 pt-10 lg:py-20 lg:pl-[max(2.5rem,calc((100vw-75rem)/2+2.5rem))] lg:pr-0">
             <AudienceHero />
+          </div>
+          <div className="relative -mt-2 lg:mt-0 lg:-ml-24">
+            <Image
+              src="/products/sefora-hero.jpg"
+              alt="The Sefora Tissues range on marble: 10 pack, jumbo roll, 4 pack and double pack, all 2-ply"
+              width={1672}
+              height={941}
+              priority
+              sizes="(min-width: 1024px) 58vw, 100vw"
+              className="hero-blend h-auto w-full"
+            />
           </div>
         </div>
       </section>
 
-      {/* Pillars */}
-      <section className="mx-auto max-w-content px-6 py-16 lg:px-10 lg:py-20">
-        <PillarRow />
+      {/* Feature strip */}
+      <section className="mx-auto max-w-content px-6 py-14 lg:px-10 lg:py-16">
+        <RevealOnScroll>
+          <FeatureStrip />
+        </RevealOnScroll>
+      </section>
+
+      {/* Range */}
+      <section className="mx-auto max-w-content px-6 pb-16 lg:px-10 lg:pb-24">
+        <div className="grid items-center gap-10 lg:grid-cols-[0.8fr_2.2fr] lg:gap-12">
+          <RevealOnScroll>
+            <Eyebrow>Our products</Eyebrow>
+            <h2 className="mt-5 text-4xl leading-tight text-forest-dark lg:text-[2.6rem]">
+              A Complete Range for Your Needs
+            </h2>
+            <p className="mt-5 text-base leading-relaxed text-stone">
+              From jumbo rolls to convenient multipacks, Sefora Tissues cover the formats your
+              customers and facilities actually buy, with more categories on the way.
+            </p>
+            <Link
+              href="/products"
+              className="mt-7 inline-flex items-center gap-2 rounded-full border border-forest-dark px-6 py-3 text-sm font-semibold text-forest-dark transition-colors hover:bg-forest-dark hover:text-white"
+            >
+              View All Products <ArrowRight size={16} aria-hidden="true" />
+            </Link>
+          </RevealOnScroll>
+          <RevealOnScroll delay={120}>
+            <RangeTiles />
+            <p className="mt-5 text-sm text-stone">
+              <span className="font-semibold text-forest-dark">Next in the range: </span>
+              Kitchen Towels, Wet Wipes and Serviettes.{" "}
+              <Link
+                href="/products#coming-soon"
+                className="font-medium text-forest-dark underline decoration-gold decoration-2 underline-offset-4 hover:text-forest"
+              >
+                Find out more
+              </Link>
+            </p>
+          </RevealOnScroll>
+        </div>
+      </section>
+
+      {/* Why Sefora */}
+      <section className="mx-auto max-w-content px-6 pb-16 lg:px-10 lg:pb-24">
+        <RevealOnScroll>
+          <WhySefora />
+        </RevealOnScroll>
       </section>
 
       {/* Who we serve */}
-      <section>
-        <div className="mx-auto max-w-content px-6 pb-6 pt-4 lg:px-10">
+      <section className="pb-6">
+        <div className="mx-auto max-w-content px-6 pb-8 lg:px-10">
           <RevealOnScroll>
-            <h2 className="font-display text-3xl font-bold text-ink lg:text-4xl">
-              Who we serve
-            </h2>
+            <Eyebrow>Who we serve</Eyebrow>
+            <h2 className="mt-5 text-4xl text-forest-dark lg:text-5xl">Built for B2B buyers</h2>
           </RevealOnScroll>
         </div>
         <AudienceSplit />
       </section>
 
-      {/* Products */}
-      <section className="mx-auto max-w-content px-6 py-16 lg:px-10 lg:py-24">
-        <RevealOnScroll>
-          <div className="grid gap-10 lg:grid-cols-2 lg:items-center lg:gap-16">
-            <div className="aspect-[4/3] overflow-hidden bg-sand">
-              <Image
-                src="/products/collage.jpg"
-                alt="Range of rolled and folded tissue formats, illustrative"
-                width={800}
-                height={600}
-                className="h-full w-full object-cover"
-              />
-            </div>
-            <div>
-              <h2 className="font-display text-3xl font-bold text-ink lg:text-4xl">Products</h2>
-              <p className="mt-3 max-w-md text-base leading-relaxed text-stone">
-                Core tissue categories for commercial and institutional use, supplied in
-                commercial quantities.
-              </p>
-              <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2">
-                {PRODUCTS.map((p) => (
-                  <Link
-                    key={p.slug}
-                    href={`/products#${p.slug}`}
-                    className="text-lg font-semibold text-ink underline decoration-line underline-offset-4 transition-colors hover:text-forest hover:decoration-forest"
-                  >
-                    {p.name}
-                  </Link>
-                ))}
-              </div>
-              <Link
-                href="/products"
-                className="mt-8 inline-flex items-center justify-center bg-forest px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-forest-dark"
-              >
-                View all products
-              </Link>
-            </div>
-          </div>
-        </RevealOnScroll>
-      </section>
-
       {/* How it works */}
-      <section className="mx-auto max-w-content px-6 lg:px-10">
+      <section className="mx-auto max-w-content px-6 pt-14 lg:px-10 lg:pt-20">
         <RevealOnScroll>
-          <h2 className="mb-6 font-display text-3xl font-bold text-ink lg:text-4xl">
+          <Eyebrow>How it works</Eyebrow>
+          <h2 className="mb-6 mt-5 text-4xl text-forest-dark lg:text-5xl">
             How a supply relationship starts
           </h2>
         </RevealOnScroll>
@@ -116,7 +125,7 @@ export default function HomePage() {
       </section>
 
       <CTASection
-        heading="Talk to the commercial team"
+        heading="Experience the Sefora difference"
         body="Whether you're evaluating us as a distributor, sourcing tissue for your business, or just want to see specifications and pricing, we'll respond within one business day."
         primary={{ label: "Request a Quote", href: "/contact?intent=quote" }}
         secondary={{ label: "Request a Sample", href: "/contact?intent=sample" }}

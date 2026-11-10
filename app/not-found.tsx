@@ -16,19 +16,19 @@ export default function NotFound() {
       <div className="mt-8 flex flex-wrap gap-3">
         <Link
           href="/"
-          className="inline-flex items-center justify-center bg-forest px-6 py-3 text-sm font-semibold text-white hover:bg-forest-dark"
+          className="inline-flex items-center justify-center rounded-full bg-forest px-6 py-3 text-sm font-semibold text-white hover:bg-forest-dark"
         >
           Go to homepage
         </Link>
         <Link
           href="/products"
-          className="inline-flex items-center justify-center border border-line px-6 py-3 text-sm font-semibold text-ink hover:border-forest hover:text-forest"
+          className="inline-flex items-center justify-center rounded-full border border-line px-6 py-3 text-sm font-semibold text-ink hover:border-forest hover:text-forest"
         >
           View products
         </Link>
         <Link
           href="/contact"
-          className="inline-flex items-center justify-center border border-line px-6 py-3 text-sm font-semibold text-ink hover:border-forest hover:text-forest"
+          className="inline-flex items-center justify-center rounded-full border border-line px-6 py-3 text-sm font-semibold text-ink hover:border-forest hover:text-forest"
         >
           Contact us
         </Link>

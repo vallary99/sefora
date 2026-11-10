@@ -5,7 +5,7 @@ export default function AudienceSplit() {
     <div className="mx-auto grid max-w-content gap-4 px-6 sm:grid-cols-2 lg:gap-6 lg:px-10">
       <Link
         href="/for-distributors"
-        className="group relative flex min-h-[20rem] flex-col justify-end overflow-hidden bg-forest-dark p-8 transition-colors duration-300 hover:bg-ink lg:p-10"
+        className="group relative flex min-h-[20rem] flex-col justify-end overflow-hidden rounded-[2rem] bg-forest-dark p-8 transition-colors duration-300 hover:bg-ink lg:p-10"
       >
         <span className="font-display text-2xl italic text-gold-dark/70">
           01
@@ -24,7 +24,7 @@ export default function AudienceSplit() {
 
       <Link
         href="/for-manufacturers"
-        className="group relative flex min-h-[20rem] flex-col justify-end overflow-hidden bg-sand p-8 transition-colors duration-300 hover:bg-gold/15 lg:p-10"
+        className="group relative flex min-h-[20rem] flex-col justify-end overflow-hidden rounded-[2rem] bg-sand p-8 transition-colors duration-300 hover:bg-gold/15 lg:p-10"
       >
         <span className="font-display text-2xl italic text-forest/50">02</span>
         <h3 className="mt-3 font-display text-3xl font-bold text-ink transition-colors duration-300 group-hover:text-forest lg:text-4xl">

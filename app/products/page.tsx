@@ -1,5 +1,6 @@
 import CTASection from "@/components/CTASection";
 import ProductDetail from "@/components/ProductDetail";
+import ComingSoon from "@/components/ComingSoon";
 import PageHero from "@/components/PageHero";
 import JsonLd from "@/components/JsonLd";
 import { buildMetadata, breadcrumbJsonLd } from "@/lib/seo";
@@ -8,7 +9,7 @@ import { PRODUCTS } from "@/lib/products";
 export const metadata = buildMetadata({
   title: "Products",
   description:
-    "Toilet tissue, kitchen towel, serviettes and wet wipes supplied in commercial quantities to distributors and businesses across Kenya.",
+    "Sefora Tissues toilet tissue in Jumbo Roll, Double Pack, 4 Pack and 10 Pack formats, manufactured in Kenya for distributors and businesses. Kitchen towels, wet wipes and serviettes coming soon.",
   path: "/products",
 });
 
@@ -18,13 +19,15 @@ export default function ProductsPage() {
       <JsonLd data={breadcrumbJsonLd([{ name: "Products", path: "/products" }])} />
 
       <PageHero
-        title="Products"
-        description="Core tissue categories for commercial and institutional use, manufactured and supplied in commercial quantities across Kenya."
+        title="Our Products"
+        description="Toilet tissue in four formats: Jumbo Roll, Double Pack, 4 Pack and 10 Pack, manufactured in Kenya for distributors and businesses."
       />
 
-      {PRODUCTS.map((p, i) => (
-        <ProductDetail key={p.slug} product={p} tinted={i % 2 === 1} reverse={i % 2 === 1} />
+      {PRODUCTS.map((p) => (
+        <ProductDetail key={p.slug} product={p} />
       ))}
+
+      <ComingSoon />
 
       <CTASection
         heading="Don't see what you need?"
