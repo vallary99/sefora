@@ -7,7 +7,7 @@ export default function Eyebrow({
   tone?: "gold" | "light";
   align?: "left" | "center";
 }) {
-  const color = tone === "light" ? "text-gold" : "text-gold-dark";
+  const color = tone === "light" ? "text-gold" : "text-[#7d5f04]";
   return (
     <p
       className={`text-xs font-semibold uppercase tracking-[0.22em] ${color} ${

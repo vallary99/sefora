@@ -8,7 +8,21 @@ export default function ProcessStepper({ stages }: { stages: Stage[] }) {
   const [active, setActive] = useState(0);
 
   return (
-    <div className="rounded-[2rem] bg-forest-dark p-8 text-white lg:p-14">
+    <>
+    <ol className="space-y-3 lg:hidden">
+      {stages.map((stage, i) => (
+        <li key={stage.title} className="flex gap-4 rounded-2xl bg-forest-dark p-5 text-white">
+          <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gold font-display text-base font-semibold text-forest-dark">
+            {i + 1}
+          </span>
+          <div>
+            <p className="font-display text-xl leading-snug">{stage.title}</p>
+            <p className="mt-1.5 text-sm leading-relaxed text-white/70">{stage.body}</p>
+          </div>
+        </li>
+      ))}
+    </ol>
+    <div className="hidden rounded-[2rem] bg-forest-dark p-8 text-white lg:block lg:p-14">
       <div className="hidden gap-2 sm:flex-nowrap lg:flex">
         {stages.map((stage, i) => (
           <button
@@ -71,5 +85,6 @@ export default function ProcessStepper({ stages }: { stages: Stage[] }) {
         </div>
       </div>
     </div>
+    </>
   );
 }

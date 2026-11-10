@@ -34,10 +34,10 @@ export default function HomePage() {
       >
         <GoldWave className="absolute inset-x-0 bottom-0 z-[5] h-20 w-full lg:h-32" />
         <div className="relative z-10 grid items-center lg:grid-cols-[1fr_1.3fr]">
-          <div className="relative z-20 min-w-0 px-6 pb-2 pt-10 lg:py-20 lg:pl-[max(2.5rem,calc((100vw-75rem)/2+2.5rem))] lg:pr-0">
+          <div className="relative z-20 order-2 min-w-0 px-6 pb-20 pt-2 lg:order-none lg:py-20 lg:pl-[max(2.5rem,calc((100vw-75rem)/2+2.5rem))] lg:pr-0">
             <AudienceHero />
           </div>
-          <div className="relative -mt-2 lg:mt-0 lg:-ml-24">
+          <div className="relative order-1 lg:order-none lg:-ml-24">
             <Image
               src="/products/sefora-hero.jpg"
               alt="The Sefora Tissues range on marble: 10 pack, jumbo roll, 4 pack and double pack, all 2-ply"
@@ -52,21 +52,21 @@ export default function HomePage() {
       </section>
 
       {/* Feature strip */}
-      <section className="mx-auto max-w-content px-6 py-14 lg:px-10 lg:py-16">
+      <section className="mx-auto max-w-content px-6 py-8 lg:px-10 lg:py-16">
         <RevealOnScroll>
           <FeatureStrip />
         </RevealOnScroll>
       </section>
 
       {/* Range */}
-      <section className="mx-auto max-w-content px-6 pb-16 lg:px-10 lg:pb-24">
-        <div className="grid items-center gap-10 lg:grid-cols-[0.8fr_2.2fr] lg:gap-12">
+      <section className="mx-auto max-w-content px-6 pb-12 lg:px-10 lg:pb-24">
+        <div className="grid items-center gap-6 lg:grid-cols-[0.8fr_2.2fr] lg:gap-12">
           <RevealOnScroll>
             <Eyebrow>Our products</Eyebrow>
-            <h2 className="mt-5 text-4xl leading-tight text-forest-dark lg:text-[2.6rem]">
+            <h2 className="mt-4 text-3xl leading-tight text-forest-dark lg:mt-5 lg:text-[2.6rem]">
               A Complete Range for Your Needs
             </h2>
-            <p className="mt-5 text-base leading-relaxed text-stone">
+            <p className="mt-4 text-base leading-relaxed text-stone">
               From jumbo rolls to convenient multipacks, Sefora Tissues cover the formats your
               customers and facilities actually buy, with more categories on the way.
             </p>
@@ -94,33 +94,33 @@ export default function HomePage() {
       </section>
 
       {/* Why Sefora */}
-      <section className="mx-auto max-w-content px-6 pb-16 lg:px-10 lg:pb-24">
+      <section className="mx-auto max-w-content px-6 pb-12 lg:px-10 lg:pb-24">
         <RevealOnScroll>
           <WhySefora />
         </RevealOnScroll>
       </section>
 
       {/* Who we serve */}
-      <section className="pb-6">
-        <div className="mx-auto max-w-content px-6 pb-8 lg:px-10">
+      <section className="pb-2 lg:pb-6">
+        <div className="mx-auto max-w-content px-6 pb-5 lg:px-10 lg:pb-8">
           <RevealOnScroll>
             <Eyebrow>Who we serve</Eyebrow>
-            <h2 className="mt-5 text-4xl text-forest-dark lg:text-5xl">Built for B2B buyers</h2>
+            <h2 className="mt-4 text-3xl text-forest-dark lg:mt-5 lg:text-5xl">Built for B2B buyers</h2>
           </RevealOnScroll>
         </div>
         <AudienceSplit />
       </section>
 
       {/* How it works */}
-      <section className="mx-auto max-w-content px-6 pt-14 lg:px-10 lg:pt-20">
+      <section className="mx-auto max-w-content px-6 pt-10 lg:px-10 lg:pt-20">
         <RevealOnScroll>
           <Eyebrow>How it works</Eyebrow>
-          <h2 className="mb-6 mt-5 text-4xl text-forest-dark lg:text-5xl">
+          <h2 className="mb-4 mt-4 text-3xl text-forest-dark lg:mb-6 lg:mt-5 lg:text-5xl">
             How a supply relationship starts
           </h2>
         </RevealOnScroll>
       </section>
-      <section className="mx-auto max-w-content px-0 pb-16 lg:px-10 lg:pb-24">
+      <section className="mx-auto max-w-content px-6 pb-12 lg:px-10 lg:pb-24">
         <ProcessStepper stages={BD_STAGES} />
       </section>
 

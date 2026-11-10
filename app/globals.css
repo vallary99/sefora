@@ -87,3 +87,15 @@ h1, h2, h3, h4, .font-display {
     mask-composite: intersect;
   }
 }
+
+/* Dissolves all four edges of a photo into the surface behind it */
+.soft-blend {
+  -webkit-mask-image:
+    linear-gradient(to right, transparent 0%, #000 14%, #000 86%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, #000 12%, #000 86%, transparent 100%);
+  mask-image:
+    linear-gradient(to right, transparent 0%, #000 14%, #000 86%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, #000 12%, #000 86%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-composite: intersect;
+}
