@@ -8,8 +8,8 @@ import { buildMetadata, breadcrumbJsonLd } from "@/lib/seo";
 export const metadata = buildMetadata({
   title: "For Businesses & Institutions",
   description:
-    "Reliable tissue and hygiene products for businesses and institutions across Kenya: washrooms, staff welfare, production environments and hospitality.",
-  path: "/for-manufacturers",
+    "Reliable tissue and hygiene products for businesses and institutions across Kenya: washrooms, staff welfare, offices and hospitality.",
+  path: "/for-businesses",
 });
 
 const QUESTIONS = [
@@ -27,21 +27,21 @@ const QUESTIONS = [
   },
 ];
 
-export default function ForManufacturersPage() {
+export default function ForBusinessesPage() {
   return (
     <>
       <JsonLd
         data={breadcrumbJsonLd([
           {
             name: "For Businesses & Institutions",
-            path: "/for-manufacturers",
+            path: "/for-businesses",
           },
         ])}
       />
 
       <PageHero
         title="A reliable source for a recurring requirement"
-        description="If your organisation needs tissue products repeatedly, for washrooms, staff welfare, production areas or hospitality, Sefora can meet it as a standing arrangement."
+        description="If your organisation needs tissue products repeatedly, for washrooms, staff welfare, offices or hospitality, Sefora can meet it as a standing arrangement."
       />
 
       <section className="mx-auto max-w-content px-6 py-10 lg:px-10 lg:py-14">

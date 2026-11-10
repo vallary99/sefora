@@ -97,7 +97,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/for-manufacturers"
+                  href="/for-businesses"
                   className="text-sm text-stone hover:text-forest"
                 >
                   For businesses

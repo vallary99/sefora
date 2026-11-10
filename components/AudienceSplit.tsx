@@ -23,7 +23,7 @@ export default function AudienceSplit() {
       </Link>
 
       <Link
-        href="/for-manufacturers"
+        href="/for-businesses"
         className="group relative flex min-h-[13rem] lg:min-h-[20rem] flex-col justify-end overflow-hidden rounded-[2rem] bg-sand p-6 transition-colors duration-300 hover:bg-gold/15 lg:p-10"
       >
         <span className="font-display text-2xl italic text-forest/50">02</span>
@@ -31,7 +31,7 @@ export default function AudienceSplit() {
           Businesses &amp; Institutions
         </h3>
         <p className="mt-3 max-w-sm text-[15px] leading-relaxed text-stone">
-          Standing tissue requirements for washrooms, welfare and production, met
+          Standing tissue requirements for washrooms, offices and hospitality, met
           through one reliable commercial relationship rather than repeat one-off
           buying.
         </p>

@@ -10,7 +10,7 @@ const INTENTS = [
   { value: "general", label: "General enquiry" },
 ];
 
-const BUSINESS_TYPES = ["Distributor", "Manufacturer", "Other business", "Not sure yet"];
+const BUSINESS_TYPES = ["Distributor", "Business", "Not sure yet"];
 
 export default function EnquiryForm({ defaultIntent = "general" }: { defaultIntent?: string }) {
   const [status, setStatus] = useState<"idle" | "submitting" | "sent" | "error">("idle");
@@ -48,7 +48,7 @@ export default function EnquiryForm({ defaultIntent = "general" }: { defaultInte
             Thank you. A member of the Sefora commercial team will get back to you, usually
             within one business day. If your request is urgent, call{" "}
             <a href="tel:+254740045065" className="font-semibold text-forest underline">
-              +254 700 000 000
+              +254 740 045 065
             </a>
             .
           </p>

@@ -23,7 +23,7 @@ export const PRIMARY_NAV = [
   { label: "Home", href: "/" },
   { label: "Products", href: "/products" },
   { label: "For Distributors", href: "/for-distributors" },
-  { label: "For Businesses", href: "/for-manufacturers" },
+  { label: "For Businesses", href: "/for-businesses" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
@@ -40,7 +40,7 @@ export const FOOTER_NAV = [
     heading: "Work with us",
     links: [
       { label: "For distributors", href: "/for-distributors" },
-      { label: "For businesses & institutions", href: "/for-manufacturers" },
+      { label: "For businesses & institutions", href: "/for-businesses" },
       { label: "Request a quote", href: "/contact?intent=quote" },
       { label: "Request a sample", href: "/contact?intent=sample" },
     ],

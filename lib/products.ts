@@ -60,7 +60,7 @@ export const UPCOMING_CATEGORIES = [
   {
     slug: "kitchen-towels",
     name: "Kitchen Towels",
-    blurb: "Absorbent towels for kitchens, food service and production areas.",
+    blurb: "Absorbent towels for kitchens, food service and commercial kitchens.",
   },
   {
     slug: "wet-wipes",

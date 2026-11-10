@@ -1,7 +1,7 @@
 import {
   Droplets,
   Coffee,
-  Factory,
+  Utensils,
   Building2,
   Hotel,
   Landmark,
@@ -25,17 +25,17 @@ const USE_CASES: UseCase[] = [
   {
     icon: Coffee,
     title: "Staff welfare & break rooms",
-    body: "Kitchen towel and tissue for shared spaces, usually ordered alongside washroom supply rather than separately.",
+    body: "Tissue for shared spaces, usually ordered alongside washroom supply rather than separately.",
   },
   {
-    icon: Factory,
-    title: "Production environments",
-    body: "Wipe-down and hygiene needs on the floor, where consistency of supply matters more than brand recognition.",
+    icon: Utensils,
+    title: "Restaurants & food service",
+    body: "Busy kitchens and dining areas with a constant tissue requirement, where running out is not an option.",
   },
   {
     icon: Building2,
     title: "Offices & reception areas",
-    body: "Wet wipes and washroom tissue where visitors and staff meet, often the first thing noticed about how well a facility is run.",
+    body: "Washroom tissue where visitors and staff meet, often the first thing noticed about how well a facility is run.",
   },
   {
     icon: Hotel,
